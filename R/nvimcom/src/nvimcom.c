@@ -60,7 +60,7 @@ static char *glbnvbuf1;
 static char *glbnvbuf2;
 static unsigned long lastglbnvbsz;
 static unsigned long glbnvbufsize = 32768;
-static int maxdepth = 1;
+static int maxdepth = 10;
 static int curdepth = 0;
 static int autoglbenv = 0;
 static clock_t tm;

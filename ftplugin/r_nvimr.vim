@@ -65,7 +65,8 @@ let b:IsInRCode = function("DefaultIsInRCode")
 " Key bindings and menu items
 
 call RCreateStartMaps()
-call RCreateEditMaps()
+" following may be error !!!
+" call RCreateEditMaps()
 
 " Only .R files are sent to R
 call RCreateMaps('ni', 'RSendFile',  'aa', ':call SendFileToR("silent")')
