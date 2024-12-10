@@ -527,7 +527,7 @@ function RControlMaps()
     call RCreateMaps('ni', 'RViewDFs',     'vs', ':call RAction("viewobj", ", howto=''split''")')
     call RCreateMaps('ni', 'RViewDFv',     'vv', ':call RAction("viewobj", ", howto=''vsplit''")')
     call RCreateMaps('ni', 'RViewDFa',     'vh', ':call RAction("viewobj", ", howto=''above 7split'', nrows=6")')
-    call RCreateMaps('ni', 'RDputObj',     'td', ':call RAction("dputtab")')
+    " call RCreateMaps('ni', 'RDputObj',     'td', ':call RAction("dputtab")')
 
     call RCreateMaps('v', 'RObjectPr',     'rp', ':call RAction("print", "v")')
     call RCreateMaps('v', 'RObjectNames',  'rn', ':call RAction("nvim.names", "v")')
@@ -536,7 +536,7 @@ function RControlMaps()
     call RCreateMaps('v', 'RViewDFs',      'vs', ':call RAction("viewobj", "v", ", howto=''split''")')
     call RCreateMaps('v', 'RViewDFv',      'vv', ':call RAction("viewobj", "v", ", howto=''vsplit''")')
     call RCreateMaps('v', 'RViewDFa',      'vh', ':call RAction("viewobj", "v", ", howto=''above 7split'', nrows=6")')
-    call RCreateMaps('v', 'RDputObj',      'td', ':call RAction("dputtab", "v")')
+    " call RCreateMaps('v', 'RDputObj',      'td', ':call RAction("dputtab", "v")')
 
     " Arguments, example, help
     "-------------------------------------
