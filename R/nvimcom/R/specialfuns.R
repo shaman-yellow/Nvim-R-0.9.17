@@ -348,9 +348,6 @@ nvim.get.summary <- function(obj, wdth) {
 
     if (Sys.getenv("NVIMR_COMPLCB") == "SetComplMenu") {
         .C("nvimcom_msg_to_nvim", "FinishGetSummary()", PACKAGE = "nvimcom")
-    } else {
-        .C("nvimcom_msg_to_nvim", "v:lua.require'cmp_nvim_r'.finish_get_summary()",
-           PACKAGE = "nvimcom")
     }
     return(invisible(NULL))
 }
