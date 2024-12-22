@@ -41,6 +41,10 @@ endfunction
 
 " Start R
 function StartR(whatr)
+    if string(g:SendCmdToR) != "function('SendCmdToR_fake')"
+      echo "R has already running."
+      return
+    endif
     let s:wait_nvimcom = 1
 
     if g:rplugin.starting_ncs == 1
