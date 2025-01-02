@@ -43,8 +43,10 @@ endfunction
 function StartR(whatr)
     if string(g:SendCmdToR) != "function('SendCmdToR_fake')"
       echo "R has already running."
+      call ReOpenRWin()
       return
     endif
+
     let s:wait_nvimcom = 1
 
     if g:rplugin.starting_ncs == 1
@@ -205,7 +207,7 @@ function StartR(whatr)
     endif
 
     if IsSendCmdToRFake()
-        return
+      return
     endif
 
     let args_str = join(g:rplugin.r_args)
